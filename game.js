@@ -8,12 +8,20 @@ var level = 0;
 
 // ******* Start Game *******
 
-$(document).keydown(function () {
+// $(document).on('input', function () {
+//   if (!started) {
+//     $("#level-title").text("Level " + level);
+//     nextSequence();
+//     started = true;
+//   }
+// });
+
+document.querySelector("body").addEventListener("click", function() {
   if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+}
 });
 
 
