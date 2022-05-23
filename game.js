@@ -8,7 +8,7 @@ var level = 0;
 
 // ******* Start Game *******
 
-$(document).tap(function () {
+$(document).keydown(function () {
   if (!started) {
     $("#level-title").text("Level " + level);
     nextSequence();
